@@ -520,6 +520,10 @@
 
 
 /*** Hearo Header Start ***/
+
+.hero-header .header{
+    margin-top: -100px;
+}
 .header::after {
     position: absolute;
     content: "";
@@ -547,7 +551,7 @@
     width: 400px;
     height: 400px;
     border-radius: 200px;
-    border: 30px solid rgba(247, 71, 128, 0.05);
+    border: 30px solid #1FB2AC;
     background: transparent;
     animation: RotateMoveHeader 5s linear infinite;
     z-index: -1;
@@ -645,6 +649,7 @@
     background: transparent;
     animation: RotateMoveSty-2 45s linear infinite;
     transition: 0.5s;
+    z-index: -1;
 
 }
 

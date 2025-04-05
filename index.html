@@ -46,8 +46,9 @@
     </head>
 
     <body>
-        
-
+        <span class="loader"></span>
+     
+          
           <!-- WhatsApp Floating Icon -->
     <a href="https://wa.me/917010000268" target="_blank" class="btn btn-primary1 btn-lg-square back-to-top1">
         <!-- <i class="fa fa-whatsapp"></i> -->
@@ -60,12 +61,20 @@
 
 
         <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <!-- <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border " style="width: 3rem; height: 3rem; color: #1FB2AC;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
-        </div>
+        </div> -->
         <!-- Spinner End -->
+
+        <!-- From Uiverse.io by ZacharyCrespin2 --> 
+<!-- <svg viewBox="0 0 240 240" height="240" width="240" class="loader">
+	<circle stroke-linecap="round" stroke-dashoffset="-330" stroke-dasharray="0 660" stroke-width="20" stroke="#000" fill="none" r="105" cy="120" cx="120" class="loader-ring loader-ring-a"></circle>
+	<circle stroke-linecap="round" stroke-dashoffset="-110" stroke-dasharray="0 220" stroke-width="20" stroke="#000" fill="none" r="35" cy="120" cx="120" class="loader-ring loader-ring-b"></circle>
+	<circle stroke-linecap="round" stroke-dasharray="0 440" stroke-width="20" stroke="#000" fill="none" r="70" cy="120" cx="85" class="loader-ring loader-ring-c"></circle>
+	<circle stroke-linecap="round" stroke-dasharray="0 440" stroke-width="20" stroke="#000" fill="none" r="70" cy="120" cx="155" class="loader-ring loader-ring-d"></circle>
+</svg> -->
 
 
         <!-- Navbar & Hero Start -->
@@ -81,7 +90,11 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
                         <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="about.html"  class="nav-item nav-link">About</a>
+                        <!-- <a href="/about" onclick="showLoader()">About</a> -->
+
+
+
                         <!-- <a href="service.html" class="nav-item nav-link">Services</a> -->
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
@@ -136,7 +149,7 @@
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         
                         <div class="RotateMoveLeft">
-                            <img src="img/about5.jpg" class="img-fluid w-100" alt="" style="margin-top: -50px;">
+                            <img src="img/about2.jpg" class="img-fluid w-100" alt="" style="margin-top: -50px;">
                         </div>
                     </div>
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -293,15 +306,19 @@
                 <div class="col-lg-4 col-md-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item rounded d-flex h-100">
                         <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service4.jpg" alt="">
+                         
+                          
+                            <img class="img-fluid" src="img/Designer life-bro.png" alt="" style="height: 100%;width: 100%; ">
+                            
                         </div>
                         <div class="service-text rounded p-5">
                             <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/logo1.png" alt="Icon">
+                                <img class="img-fluid" src="img/design1.png" alt="Icon">
                                 <!-- <i class="fas fa-palette  img-fluid" style="color: #1FB2AC;"></i></div> -->
                                 
                             </div>
                             <h4 class="mb-4">Design Services</h4>
+                          
                             <p class="mb-4">
                                 Using creative design solutions to create smooth digital experiences, improving 
                                 company identification and user engagement one pixel at a time.
@@ -313,13 +330,14 @@
                 <div class="col-lg-4 col-md-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item rounded d-flex h-100">
                         <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service5.jpg" alt="">
+                            <!-- <img class="img-fluid" src="img/.jpg" alt=""> -->
                         </div>
-                        <div class="service-text rounded p-5">
+                        <div class="service-text  rounded p-5">
                             <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/logo1.png" alt="Icon">
+                                
+                                <img class="img-fluid" src="img/development.png" alt="Icon">
                             </div>
-                            <h4 class="mb-4">Development </h4>
+                            <h4 class="mb-4 ">Development </h4>
                             <p class="mb-4">Our specialty is creating scalable, reliable solutions that are suited to your particular requirements while guaranteeing effectiveness, creativity, and long-term value.
                             </p>
                             <a class="btn btn-sm" href="service.html"><i class="fa fa-plus text-primary me-2"></i>Read More</a>
@@ -329,11 +347,11 @@
                 <div class="col-lg-4 col-md-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item rounded d-flex h-100">
                         <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service3.jpg" alt="">
+                            <img class="img-fluid" src="img/s.jpg" alt="">
                         </div>
                         <div class="service-text rounded p-5">
                             <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/logo1.png" alt="Icon">
+                                <img class="img-fluid" src="img/technical.png" alt="Icon">
                             </div>
                             <h4 class="mb-4">Technical Services</h4>
                                 <p class="mb-4">Our proficient technical services and dependable, secure, and effective IT solutions enable organizations to integrate seamlessly and achieve long-term success.
@@ -345,11 +363,11 @@
                 <div class="col-lg-4 col-md-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item rounded d-flex h-100">
                         <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service2.jpg" alt="">
+                            <img class="img-fluid" src="img/.jpg" alt="">
                         </div>
                         <div class="service-text rounded p-5">
                             <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/logo1.png" alt="Icon">
+                                <img class="img-fluid" src="img/maintenance (2).png" alt="Icon">
                             </div>
                             <h4 class="mb-4">Maintenance</h4>
                             <p class="mb-4">The implementation of proactive maintenance solutions is done in order to guarantee optimal performance and the continuity of business operations.
@@ -361,11 +379,11 @@
                 <div class="col-lg-4 col-md-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item rounded d-flex h-100">
                         <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service1.jpg" alt="">
+                            <img class="img-fluid" src="img/.jpg" alt="">
                         </div>
                         <div class="service-text rounded p-5">
                             <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/logo1.png" alt="Icon">
+                                <img class="img-fluid" src="img/digital.png" alt="Icon">
                             </div>
                             <h4 class="mb-4">Digital Marketing </h4>
                                 <p class="mb-4">Design, develop, and optimize websites with responsive, user-friendly, and secure solutions tailored to your business needs, and ensuring seamless performance.

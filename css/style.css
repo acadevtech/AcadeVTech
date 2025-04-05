@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap');
 /*** Spinner Start ***/
 /*** Spinner ***/
-#spinner {
+/* #spinner {
     opacity: 0;
     visibility: hidden;
     transition: opacity .5s ease-out, visibility 0s linear .5s;
@@ -12,8 +12,10 @@
     transition: opacity .5s ease-out, visibility 0s linear 0s;
     visibility: visible;
     opacity: 1;
-}
+} */
 /*** Spinner End ***/
+
+
 
 
 /*** whatapp***/
@@ -31,6 +33,37 @@
 .whatsapp-icon:hover {
     background-color: #1FB2AC;
 }  */
+
+
+/* HTML: <div class="loader"></div> */
+
+/* .loader {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: block;
+    margin:15px auto;
+    position: relative;
+    color: #d40808d3;
+    box-sizing: border-box;
+    animation: animloader 1s linear infinite alternate;
+  }
+  
+  @keyframes animloader {
+    0% {
+      box-shadow: -38px -12px ,  -14px 0,  14px 0, 38px 0;
+    }
+    33% {
+      box-shadow: -38px 0px, -14px -12px,  14px 0, 38px 0;
+    }
+    66% {
+      box-shadow: -38px 0px , -14px 0, 14px -12px, 38px 0;
+    }
+    100% {
+      box-shadow: -38px 0 , -14px 0, 14px 0 , 38px -12px;
+    }
+  }
+   */
 
 .back-to-top1:hover{
     background-color: #1FB2AC;
@@ -419,7 +452,7 @@
     list-style: none;
     width: 20px;
     height: 20px;
-    background: #ffffff;
+    background: #1FB2AC;
     animation: animate 25s linear infinite;
     bottom: -150px;
     
@@ -524,26 +557,28 @@
 .hero-header .header{
     margin-top: -100px;
 }
-.header::after {
+/* .header::after {
     position: absolute;
     content: "";
     top: 0;
     right: 0;
     width: 60%;
     height: 100%;
-    background: var(--bs-light);
+    background: #1FB2AC;
     border-radius: 22% 78% 33% 67% / 32% 0% 100% 68%;
     animation: bgMove 5s linear infinite;
     z-index: -1;
-}
+} */
 
-@keyframes bgMove {
+/* Home image background animation ovel shape */
+
+/* @keyframes bgMove {
     0%   {right: 0px;}
     50%   {right: 20px;}
     100%  {right: 0px;}
-}
+} */
 
-.header::before {
+/* .header::before {
     content: "";
     position: absolute;
     bottom: -9%;
@@ -551,12 +586,12 @@
     width: 400px;
     height: 400px;
     border-radius: 200px;
-    border: 30px solid #1FB2AC;
+    border: 30px solid #080808;
     background: transparent;
     animation: RotateMoveHeader 5s linear infinite;
     z-index: -1;
 
-}
+} */
 
 @keyframes RotateMoveHeader {
     0% {
@@ -581,7 +616,7 @@
     position: relative;
 }
 
-.hero-header::after {
+/* .hero-header::after {
     content: "";
     position: absolute;
     left: 100px;
@@ -593,7 +628,7 @@
     transition: 0.5s;
     z-index: -1;
     
-}
+} */
 
 @keyframes RotateMoveSty-3 {
     0%   {left: 100px;}
@@ -653,6 +688,8 @@
 
 }
 
+
+
 @keyframes RotateMoveSty-2 {
     0%   {left: 0px;}
     40%   {top: -30px;}
@@ -705,10 +742,12 @@
 .collection-img {
     gap: 200px;
 } */
-.service-img .img-fluid{
+/* .service-img .img-fluid{
     opacity: 0.5;
-    /* color: #1FB2AC; */
-}
+   
+} */
+
+
 
 /* .service-img .img-fluid:hover{
     background-color: #000000;
@@ -1207,7 +1246,21 @@ a:-webkit-any-link {
 .service-item:hover .service-img img {
     transform: scale(1);
 }
+.service-item:hover .service-text img{
+    visibility: hidden;
+    display: none;
+}
 
+.service-item:hover .service-text p{
+    visibility: hidden;
+}
+
+.service-item:hover .service-text h4{
+    visibility: hidden;
+}
+.service-item:hover .service-text .text1 {
+    color: #1FB2AC !important;
+}
 .service-item .service-text {
     background: #FFFFFF;
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
@@ -1224,13 +1277,13 @@ a:-webkit-any-link {
 }
 
 .service-item:hover .service-text h4 {
-    color: white;
+    color: rgb(13, 13, 13);
     font-weight: 700;
 }
 
 .service-item:hover .service-text p {
     color:black;
-    font-weight: 500;
+    font-weight: 200;
 }
 
 .service-item .service-text .btn-square {
@@ -1267,8 +1320,9 @@ a:-webkit-any-link {
     /* border-color: #fcfcfc!important; */
 }
 .filter-button-group .btn:hover{
-    color:  #000000!important;
-    border: #ffffff !important;
+    color:  #000000;
+    /* border: #ffffff !important; */
+    /* margin-top: 10px; */
 }
 .collection-img span{
     top: 20px;
@@ -1525,7 +1579,7 @@ button:focus, input:focus, textarea:focus {
 }
 .footer .footer-item a {
     line-height: 35px;
-    color: var(--bs-dark);
+    color: rgb(48, 47, 47);
     transition: 0.5s;
 }
 

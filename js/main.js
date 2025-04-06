@@ -11,6 +11,15 @@
     };
     spinner(0);
     
+
+    window.addEventListener("load", function () {
+        const preloader = document.getElementById("preloader");
+        preloader.style.opacity = '0';
+        preloader.style.transition = 'opacity 0.5s ease';
+        setTimeout(() => {
+          preloader.style.display = 'none';
+        }, 2000);
+      });
     
     // Initiate the wowjs
     new WOW().init();
@@ -158,4 +167,7 @@ new Swiper('.card-wrapper', {
         }
     }
 });
+
+
+
 

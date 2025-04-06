@@ -51,7 +51,13 @@
     </head>
 
     <body>
-        <div class="loader"></div>
+        <!-- <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div> -->
+        
 
         <!-- WhatsApp Floating Icon -->
         <a href="https://wa.me/917010000268" target="_blank" class="btn btn-primary1 btn-lg-square back-to-top1">
@@ -65,11 +71,11 @@
     
 
         <!-- Spinner Start -->
-        <!-- <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border " style="width: 3rem; height: 3rem; color: #1FB2AC;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
-        </div> -->
+        </div>
         <!-- Spinner End -->
 
 
@@ -85,18 +91,33 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <!-- <a href="service.html" class="nav-item nav-link">Services</a> -->
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="service.html" class="dropdown-item">Design Services</a>
-                                <a href="service.html" class="dropdown-item">Development    </a>
-                                <!-- <a href="service.html" class="dropdown-item">Marketing</a> -->
-                                <a href="service.html" class="dropdown-item">Technical Services</a>
+                            <a href="service.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Services</a>
+                            <div class="dropdown-menu m-0 filter-button-group">
+                                <button type = "button" class = "dropdown-item  " data-filter = ".design">Design Services</button>
+                                <button type = "button" class = "dropdown-item  " data-filter = ".develop">Development</button>
+                                <button type = "button" class = "dropdown-item  " data-filter = ".tech">Technical Services</button>
+                                 <!-- <a href="service.html" class="dropdown-item">Marketing</a> -->
+                                <button type = "button" class = "dropdown-item  " data-filter = ".main">Maintenance</button>
+                                <button type = "button" class = "dropdown-item  " data-filter = ".digi">Digital marketing</button>
+                            <!-- </div> -->
+                                
+                                <!-- <a href="service.html" class="dropdown-item" data-filter = ".design">Design Services</a>
+                                <a href="service.html" class="dropdown-item">Development    </a> -->
+                               
+                                <!-- <a href="service.html" class="dropdown-item">Technical Services</a>
                                 <a href="service.html" class="dropdown-item">Maintenance</a>
-                                <a href="service.html" class="dropdown-item">Digital Marketing</a>
+                               
+
+                                <!-- <div class = "row g-0">
+                                    <div class = "d-flex flex-wrap justify-content-center mt-5 filter-button-group"> -->
+                                        <!-- <a href = "" class = "btn m-2 text-dark active-filter-btn" data-filter = "*">All</button> -->
+                                      
+                                        <!-- <button type = "button" class = "btn m-2 text-dark" data-filter = ".market">Marketing</button> -->
+                                      
                             </div>
                         </div>
                         <!-- <a href="index.html" class="nav-item nav-link">Blog</a> -->
@@ -235,6 +256,7 @@
             </div>
         </div> -->
         <!-- Service End -->
+       
         <div class="container-fluid service py-5">
             <div class="container py-5">
         <section id = "collection" class = "py-5">
@@ -242,6 +264,7 @@
                 <div class = "title text-center">
                     <h2 class = "position-relative d-inline-block">New Collection</h2>
                 </div>
+                
     
                 <div class = "row g-0">
                     <div class = "d-flex flex-wrap justify-content-center mt-5 filter-button-group">
@@ -263,7 +286,9 @@
                                   
                                         <div class="service-item text-center rounded p-4" class = "w-100">
                                             <div class="service-icon d-inline-block bg-light rounded p-4 mb-4">
-                                                <i class="fas fa-palette fa-5x " style="color: #1FB2AC;"></i></div>
+                                                <!-- <i class="fas fa-palette fa-5x " style="color: #1FB2AC;"></i> -->
+                                                 <img src="img/webhost.png" alt="" style="height: 80px; width: 80px;">
+                                            </div>
                                             <div class="service-content">
                                                 <h4 class="mb-4">Web Hosting</h4>
                                                 <p class="mb-4">Delivering fast, secure, and reliable web hosting services aimed at maximizing uptime and offering unmatched customer support.
@@ -303,7 +328,10 @@
                                                         <div class="row g-4 justify-content-center">
                                                     <div class="service-item text-center rounded p-4" class = "w-100">
                                                         <div class="service-icon d-inline-block bg-light rounded p-4 mb-4">
-                                                            <i class="fas fa-palette fa-5x " style="color: #1FB2AC;"></i></div>
+                                                            <!-- <i class="fas fa-palette fa-5x " style="color: #1FB2AC;"></i> -->
+                                                             <img src="img/SEO.png" alt="" style="height: 80px; width: 80px;">
+                                                    
+                                                        </div>
                                                         <div class="service-content">
                                                             <h4 class="mb-4">SEO </h4>
                                                             <p class="mb-4">Designing intuitive, eye-catching visuals to elevate your brand—specializing in UI/UX and branding for a smooth digital experience.
@@ -336,7 +364,10 @@
                                     <div class = "collection-img position-relative">
                                         <div class="row g-4 justify-content-center">
                                     <div class="service-item text-center rounded p-4">
-                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i></div>
+                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4">
+                                            <!-- <i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i> -->
+                                             <img src="img/ebook.png" alt="" style="height: 80px; width: 80px;">
+                                        </div>
                                         <div class="service-content">
                                             <h4 class="mb-4">UI/UX Design</h4>
                                             <p class="mb-4">Crafting intuitive, engaging experiences that streamline interaction, boost conversions, and enhance your digital presence.
@@ -368,7 +399,10 @@
                                     <div class = "collection-img position-relative">
                                         <div class="row g-4 justify-content-center">
                                     <div class="service-item text-center rounded p-4">
-                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i></div>
+                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4">
+                                            <!-- <i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i> -->
+                                             <img src="img/content-marketing.png" alt="" style="height: 80px; width: 80px;">
+                                        </div>
                                         <div class="service-content">
                                             <h4 class="mb-4">Logo & Branding</h4>
                                             <p class="mb-4">Designing user-friendly, visually appealing interfaces to elevate your brand through expert UI/UX and branding.
@@ -399,7 +433,10 @@
                                     <div class = "collection-img position-relative">
                                         <div class="row g-4 justify-content-center">
                                     <div class="service-item text-center rounded p-4">
-                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i></div>
+                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4">
+                                            <!-- <i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i> -->
+                                             <img src="img/cloud-computing.png" alt="" style="height: 80px; width: 80px;"> 
+                                        </div>
                                         <div class="service-content">
                                             <h4 class="mb-4">API Integration</h4>
                                             <p class="mb-4">Connecting businesses and applications seamlessly through secure, and reliable API integrations that drive innovation.
@@ -430,7 +467,10 @@
                                     <div class = "collection-img position-relative">
                                         <div class="row g-4 justify-content-center">
                                     <div class="service-item text-center rounded p-4">
-                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i></div>
+                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4">
+                                            <!-- <i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i> -->
+                                             <img src="img/cad.png" alt="" style="height: 80px; width: 80px;">
+                                        </div>
                                         <div class="service-content">
                                             <h4 class="mb-4">SEM </h4>
                                             <p class="mb-4">Build high-performance, scalable, and secure applications tailored to 
@@ -462,7 +502,10 @@
                                     <div class = "collection-img position-relative">
                                         <div class="row g-4 justify-content-center">
                                     <div class="service-item text-center rounded p-4">
-                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i></div>
+                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4">
+                                        <!-- <i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i> -->
+                                         <img src="img/open-laptop.png" alt="" style="height: 80px; width: 80px;">
+                                    </div>
                                         <div class="service-content">
                                             <h4 class="mb-4">Domain Registration</h4>
                                             <p class="mb-4">Securing your online identity with fast, easy, and reliable domain registration services that protect your brand and online presence.
@@ -492,7 +535,10 @@
                                     <div class = "collection-img position-relative">
                                         <div class="row g-4 justify-content-center">
                                     <div class="service-item text-center rounded p-4">
-                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i></div>
+                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4">
+                                            <!-- <i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i> -->
+                                             <img src="img/graph.png" alt="" style="height: 80px; width: 80px;">
+                                        </div>
                                         <div class="service-content">
                                             <h4 class="mb-4">Graphics Design</h4>
                                             <p class="mb-4">Creating visually stunning graphic designs that capture attention, convey messages, and elevate your brand's visual identity.
@@ -522,7 +568,10 @@
                                     <div class = "collection-img position-relative">
                                         <div class="row g-4 justify-content-center">
                                     <div class="service-item text-center rounded p-4">
-                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i></div>
+                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4">
+                                            <!-- <i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i> -->
+                                             <img src="img/ecommerce-app.png" alt="" style="height: 80px; width: 80px;">
+                                        </div>
                                         <div class="service-content">
                                             <h4 class="mb-4">E-Commerce  </h4>
                                             <p class="mb-4">Creating secure, scalable e-commerce solutions that enhance shopping experiences, increase conversions, and drive sales.
@@ -552,7 +601,10 @@
                                     <div class = "collection-img position-relative">
                                         <div class="row g-4 justify-content-center">
                                     <div class="service-item text-center rounded p-4">
-                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i></div>
+                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4">
+                                            <!-- <i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i> -->
+                                             <img src="img/quality.png" alt="" style="height: 80px; width: 80px;">
+                                        </div>
                                         <div class="service-content">
                                             <h4 class="mb-4">SSL Certification</h4>
                                             <p class="mb-4">Securing your website, data, and customers with trusted SSL certificates for safe and reliable online transactions.
@@ -582,7 +634,10 @@
                                     <div class = "collection-img position-relative">
                                         <div class="row g-4 justify-content-center">
                                     <div class="service-item text-center rounded p-4">
-                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i></div>
+                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4">
+                                            <!-- <i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i> -->
+                                             <img src="img/online-payment.png" alt="" style="height: 80px; width: 80px;">
+                                        </div>
                                         <div class="service-content">
                                             <h4 class="mb-4">Mobile App  </h4>
                                             <p class="mb-4">Developing high-performance, user-friendly mobile apps for your brand—expert in iOS and Android with smooth UI/UX.
@@ -612,7 +667,10 @@
                                     <div class = "collection-img position-relative">
                                         <div class="row g-4 justify-content-center">
                                     <div class="service-item text-center rounded p-4">
-                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i></div>
+                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4">
+                                            <!-- <i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i> -->
+                                             <img src="img/machine-repair.png" alt="" style="height: 80px; width: 80px;">
+                                        </div>
                                         <div class="service-content">
                                             <h4 class="mb-4">Server Maintenance </h4>
                                             <p class="mb-4">Maintaining top server performance, security, and uptime with proactive monitoring, regular updates, and expert support.
@@ -642,7 +700,10 @@
                                     <div class = "collection-img position-relative">
                                         <div class="row g-4 justify-content-center">
                                     <div class="service-item text-center rounded p-4">
-                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i></div>
+                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4">
+                                            <!-- <i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i> -->
+                                             <img src="img/data-transfer.png" alt="" style="height: 80px; width: 80px;">
+                                        </div>
                                         <div class="service-content">
                                             <h4 class="mb-4">Back-End</h4>
                                             <p class="mb-4">Build secure, scalable backend solutions tailored to your needs—specializing in APIs and databases for smooth, reliable performance.
@@ -672,7 +733,10 @@
                                     <div class = "collection-img position-relative">
                                         <div class="row g-4 justify-content-center">
                                     <div class="service-item text-center rounded p-4">
-                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i></div>
+                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4">
+                                            <!-- <i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i> -->
+                                             <img src="img/engagement.png" alt="" style="height: 80px; width: 80px;">
+                                        </div>
                                         <div class="service-content">
                                             <h4 class="mb-4">SMM </h4>
                                             <p class="mb-4">Develop scalable, secure, high-performance apps tailored to your business—covering web, mobile, and custom software solutions.
@@ -702,7 +766,10 @@
                                     <div class = "collection-img position-relative">
                                         <div class="row g-4 justify-content-center">
                                     <div class="service-item text-center rounded p-4">
-                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i></div>
+                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4">
+                                            <!-- <i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i> -->
+                                             <img src="img/backup.png" alt="" style="height: 80px; width: 80px;">
+                                        </div>
                                         <div class="service-content">
                                             <h4 class="mb-4">Backup Services </h4>
                                             <p class="mb-4">Protecting your vital data with secure, automated backup solutions to ensure continuity and reduce downtime.
@@ -732,7 +799,10 @@
                                     <div class = "collection-img position-relative">
                                         <div class="row g-4 justify-content-center">
                                     <div class="service-item text-center rounded p-4">
-                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i></div>
+                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4">
+                                            <!-- <i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i> -->
+                                             <img src="img/progamming.png" alt="" style="height: 80px; width: 80px;">
+                                        </div>
                                         <div class="service-content">
                                             <h4 class="mb-4">Front-End </h4>
                                             <p class="mb-4">Design responsive, striking, user-friendly front-ends—specializing in modern UI/UX and smooth performance on all devices.
@@ -762,7 +832,10 @@
                                     <div class = "collection-img position-relative">
                                         <div class="row g-4 justify-content-center">
                                     <div class="service-item text-center rounded p-4">
-                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i></div>
+                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4">
+                                            <!-- <i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i> -->
+                                             <img src="img/quality-assurance.png" alt="" style="height: 80px; height: 80px;">
+                                        </div>
                                         <div class="service-content">
                                             <h4 class="mb-4">Security Services</h4>
                                             <p class="mb-4">Safeguarding your digital assets with proactive, expert security solutions that detect, prevent, and respond to threats.
@@ -792,7 +865,10 @@
                                     <div class = "collection-img position-relative">
                                         <div class="row g-4 justify-content-center">
                                     <div class="service-item text-center rounded p-4">
-                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i></div>
+                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4">
+                                            <!-- <i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i> -->
+                                             <img src="img/data-monitoring.png" alt="" style="height: 80px; width: 80px;">
+                                        </div>
                                         <div class="service-content">
                                             <h4 class="mb-4">Website Monitoring</h4>
                                             <p class="mb-4">Proactively monitoring performance, uptime, and security to ensure fast issue resolution and a seamless user experience.
@@ -822,7 +898,10 @@
                                     <div class = "collection-img position-relative">
                                         <div class="row g-4 justify-content-center">
                                     <div class="service-item text-center rounded p-4">
-                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i></div>
+                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4">
+                                            <!-- <i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i> -->
+                                             <img src="img/video-lecture.png" alt="" style="height: 80px; width: 80px;">
+                                        </div>
                                         <div class="service-content">
                                             <h4 class="mb-4">Banner/AD Design </h4>
                                             <p class="mb-4">Design eye-catching banners and high-converting ads to boost engagement and brand visibility with compelling visuals.
@@ -853,7 +932,9 @@
                                         <div class="row g-4 justify-content-center">
                                     <div class="service-item text-center rounded p-4">
                                         <div class="service-icon d-inline-block bg-light rounded p-4 mb-4">
-                                            <i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i></div>
+                                            <!-- <i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i> -->
+                                             <img src="img/online-store.png" alt="" style="height: 80px; width: 80px;">
+                                        </div>
                                         <div class="service-content">
                                             <h4 class="mb-4">Online Marketing</h4>
                                             <p class="mb-4">AcadeVTech offers premium digital marketing services to boost your online visibility and drive business growth.
@@ -1080,7 +1161,7 @@
                                         <div class="row g-4 justify-content-center">
                                     <div class="service-item text-center rounded p-4">
                                         <div class="service-icon d-inline-block bg-light rounded p-4 mb-4">
-                                            <!-- <i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i> -->/
+                                            <!-- <i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i> -->
                                              <img src="img/laptop.png" alt="" style="height: 80px; width: 80px;">
                                         </div>
                                         <div class="service-content">
@@ -1312,7 +1393,10 @@
                                     <div class = "collection-img position-relative">
                                         <div class="row g-4 justify-content-center">
                                     <div class="service-item text-center rounded p-4">
-                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4"><i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i></div>
+                                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4">
+                                            <!-- <i class="fas fa-globe fa-5x" style="color: #1FB2AC;"></i> -->
+                                             <img src="img/test.png" alt="" style="width: 80px; height: 80px;">
+                                        </div>
                                         <div class="service-content">
                                             <h4 class="mb-4">Content Management</h4>
                                             <p class="mb-4">Simplifying content creation and management with scalable, secure solutions that boost engagement and efficiency.
